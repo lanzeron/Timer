@@ -10,7 +10,7 @@
                 var second = time % 60,
                     minute = (Math.floor(time / 60)) % 60,
                     hour = (Math.floor(time / 60 / 60)) % 24,
-                    day = (Math.floor(time / 60 / 60 / 24)) % 24;
+                    day = (Math.floor(time / 60 / 60 / 24)) % 365;
                 second < 10 ? second = "0" + second : second;
                 minute < 10 ? minute = "0" + minute : minute;
                 hour < 10 ? hour = "0" + hour : hour;
