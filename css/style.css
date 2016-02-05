@@ -1,0 +1,83 @@
+* {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.clock {
+	width: 400px;
+	height: 200px;
+	background: url('../images/background.jpg');
+}
+
+.days {
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	background-color: white;
+	top: 170px;
+	left: 60px;
+	text-align: center ;
+	border-radius: 5px;
+
+}
+
+.hours {
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	background-color: white;
+	top: 170px;
+	left: 140px;
+	text-align: center;
+	border-radius: 5px;
+
+}
+
+.minutes {
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	background-color: white;
+	top: 170px;
+	left: 215px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.seconds {
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	background-color: white;
+	top: 170px;
+	left: 300px;
+	text-align: center;
+	border-radius: 5px;
+}
+.dayText {
+	color: white;
+	position: absolute;
+	top: 210px;
+	left: 65px;
+}
+.hourText {
+	color: white;
+	position: absolute;
+	top: 210px;
+	left: 140px;
+
+}
+
+.minuteText {
+
+	color: white;
+	position: absolute;
+	top: 210px;
+	left: 215px;
+}
+.secondText {
+	color: white;
+	position: absolute;
+	top: 210px;
+	left: 295px;
+}
