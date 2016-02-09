@@ -24,6 +24,18 @@
                     alert('Time is out');
                 }
             }, 1000);
+
+                $('#button').css('display', 'none');
+                input.value = 'timer is running';
+                var stop = $('<button id="stop">stop</button>');
+                $('#time').append(stop);
+
+            stop.click(function() {
+                clearInterval(intervalID);
+                stop.css('display', 'none');
+                $('#button').css('display', 'inline');
+                input.value = "";
+            })
         }
     })
 })();
