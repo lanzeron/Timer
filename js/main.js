@@ -25,16 +25,19 @@
                 }
             }, 1000);
 
-                $('#button').css('display', 'none');
-                input.value = 'timer is running';
-                var stop = $('<button id="stop">stop</button>');
-                $('#time').append(stop);
 
+                var stop = $('#stop');
+                $('#button').css('display', 'none');
+                $('#message').text('timer is running');
+                stop.css('display', 'inline');
+                input.value = "";
+                
+               
             stop.click(function() {
                 clearInterval(intervalID);
                 stop.css('display', 'none');
                 $('#button').css('display', 'inline');
-                input.value = "";
+                $('#message').text('Please type time in seconds!');
             })
         }
     })
